@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>placeholderrrrr — Portfolio</title>
+<title>placeholderrr — Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -16,7 +16,6 @@
     --ink2: #5a5a55;
     --ink3: #9a9a93;
     --rule: #e4e4de;
-    --accent: #1a1a18;
     --tag-bg: #f0f0eb;
     --card-bg: #ffffff;
   }
@@ -40,20 +39,11 @@
     height: 56px;
     display: flex; align-items: center; justify-content: space-between;
   }
-  .nav-name {
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.1rem;
-    letter-spacing: -0.01em;
-  }
+  .nav-name { font-family: 'DM Serif Display', serif; font-size: 1.1rem; letter-spacing: -0.01em; }
   .nav-links { display: flex; gap: 2rem; }
   .nav-links a {
-    font-size: 0.8rem;
-    font-weight: 400;
-    color: var(--ink2);
-    text-decoration: none;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    transition: color 0.2s;
+    font-size: 0.8rem; font-weight: 400; color: var(--ink2);
+    text-decoration: none; letter-spacing: 0.08em; text-transform: uppercase; transition: color 0.2s;
   }
   .nav-links a:hover { color: var(--ink); }
 
@@ -62,51 +52,29 @@
 
   .hero { padding: 7rem 0 5rem; border-bottom: 1px solid var(--rule); }
   .hero-eyebrow {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.72rem;
-    color: var(--ink3);
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    margin-bottom: 1.5rem;
-    opacity: 0;
-    animation: fadeUp 0.6s ease forwards 0.1s;
+    font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--ink3);
+    letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 1.5rem;
+    opacity: 0; animation: fadeUp 0.6s ease forwards 0.1s;
   }
   .hero h1 {
-    font-family: 'DM Serif Display', serif;
-    font-size: clamp(2.4rem, 5vw, 3.6rem);
-    font-weight: 400;
-    line-height: 1.15;
-    letter-spacing: -0.02em;
-    max-width: 640px;
-    opacity: 0;
-    animation: fadeUp 0.6s ease forwards 0.2s;
+    font-family: 'DM Serif Display', serif; font-size: clamp(2.4rem, 5vw, 3.6rem);
+    font-weight: 400; line-height: 1.15; letter-spacing: -0.02em; max-width: 640px;
+    opacity: 0; animation: fadeUp 0.6s ease forwards 0.2s;
   }
   .hero h1 em { font-style: italic; color: var(--ink2); }
   .hero-sub {
-    margin-top: 1.5rem;
-    font-size: 1rem;
-    color: var(--ink2);
-    max-width: 480px;
-    opacity: 0;
-    animation: fadeUp 0.6s ease forwards 0.35s;
+    margin-top: 1.5rem; font-size: 1rem; color: var(--ink2); max-width: 480px;
+    opacity: 0; animation: fadeUp 0.6s ease forwards 0.35s;
   }
   .hero-links {
-    margin-top: 2.5rem;
-    display: flex; gap: 1rem; flex-wrap: wrap;
-    opacity: 0;
-    animation: fadeUp 0.6s ease forwards 0.5s;
+    margin-top: 2.5rem; display: flex; gap: 1rem; flex-wrap: wrap;
+    opacity: 0; animation: fadeUp 0.6s ease forwards 0.5s;
   }
   .btn {
     display: inline-flex; align-items: center; gap: 6px;
-    padding: 0.55rem 1.2rem;
-    font-size: 0.8rem;
-    font-weight: 400;
-    font-family: 'DM Sans', sans-serif;
-    letter-spacing: 0.04em;
-    text-decoration: none;
-    border-radius: 2px;
-    transition: all 0.18s;
-    cursor: pointer;
+    padding: 0.55rem 1.2rem; font-size: 0.8rem; font-weight: 400;
+    font-family: 'DM Sans', sans-serif; letter-spacing: 0.04em;
+    text-decoration: none; border-radius: 2px; transition: all 0.18s; cursor: pointer;
   }
   .btn-primary { background: var(--ink); color: #fff; border: 1px solid var(--ink); }
   .btn-primary:hover { background: #333330; }
@@ -115,12 +83,8 @@
 
   .featured { padding: 5rem 0; border-bottom: 1px solid var(--rule); }
   .section-label {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.68rem;
-    color: var(--ink3);
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    margin-bottom: 3rem;
+    font-family: 'DM Mono', monospace; font-size: 0.68rem; color: var(--ink3);
+    letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 3rem;
     display: flex; align-items: center; gap: 1rem;
   }
   .section-label::after { content: ''; flex: 1; height: 1px; background: var(--rule); }
@@ -128,33 +92,19 @@
   .project-header { margin-bottom: 2.5rem; }
   .project-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 1rem; }
   .tag {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.68rem;
-    background: var(--tag-bg);
-    color: var(--ink2);
-    padding: 3px 10px;
-    border-radius: 2px;
-    letter-spacing: 0.04em;
+    font-family: 'DM Mono', monospace; font-size: 0.68rem; background: var(--tag-bg);
+    color: var(--ink2); padding: 3px 10px; border-radius: 2px; letter-spacing: 0.04em;
   }
   .project-title {
-    font-family: 'DM Serif Display', serif;
-    font-size: clamp(1.6rem, 3vw, 2.2rem);
-    font-weight: 400;
-    letter-spacing: -0.02em;
-    line-height: 1.2;
-    margin-bottom: 0.75rem;
+    font-family: 'DM Serif Display', serif; font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: 400; letter-spacing: -0.02em; line-height: 1.2; margin-bottom: 0.75rem;
   }
   .project-desc { font-size: 0.95rem; color: var(--ink2); max-width: 560px; line-height: 1.75; }
 
   .metrics {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1px;
-    background: var(--rule);
-    border: 1px solid var(--rule);
-    border-radius: 4px;
-    overflow: hidden;
-    margin-bottom: 2.5rem;
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    gap: 1px; background: var(--rule); border: 1px solid var(--rule);
+    border-radius: 4px; overflow: hidden; margin-bottom: 2.5rem;
   }
   .metric { background: var(--card-bg); padding: 1.25rem 1rem; text-align: center; }
   .metric-val { font-family: 'DM Serif Display', serif; font-size: 1.8rem; line-height: 1; margin-bottom: 4px; }
@@ -215,7 +165,7 @@
   .bar-fill.light { background: var(--ink3); }
   .bar-group { flex: 1; display: flex; flex-direction: column; gap: 4px; }
   .bar-group .bar-track { flex: unset; }
-  .bar-pct { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--ink3); width: 36px; flex-shrink: 0; }
+  .bar-pct { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--ink3); width: 40px; flex-shrink: 0; }
   .chart-legend { display: flex; gap: 1.5rem; margin-top: 0.75rem; padding-left: 160px; }
   .legend-item { display: flex; align-items: center; gap: 6px; font-family: 'DM Mono', monospace; font-size: 0.65rem; color: var(--ink3); }
   .legend-dot { width: 10px; height: 6px; border-radius: 1px; }
@@ -235,6 +185,26 @@
   .model-acc-label { font-size: 0.68rem; font-family: 'DM Mono', monospace; color: var(--ink3); margin-bottom: 0.75rem; }
   .model-oneshot { font-size: 0.78rem; color: var(--ink2); border-top: 1px solid var(--rule); padding-top: 0.75rem; }
   .model-oneshot span { font-family: 'DM Mono', monospace; font-weight: 500; color: var(--ink); }
+
+  /* Result table for BioBERT section */
+  .result-table-wrap { margin-bottom: 2.5rem; overflow-x: auto; }
+  .result-table {
+    width: 100%; border-collapse: collapse;
+    font-family: 'DM Mono', monospace; font-size: 0.78rem;
+  }
+  .result-table th {
+    text-align: left; padding: 0.6rem 1rem;
+    border-bottom: 1px solid var(--rule);
+    color: var(--ink3); font-weight: 400; letter-spacing: 0.06em; text-transform: uppercase; font-size: 0.68rem;
+  }
+  .result-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--rule);
+    color: var(--ink2);
+  }
+  .result-table tr:last-child td { border-bottom: none; }
+  .result-table td:first-child { color: var(--ink); font-weight: 500; }
+  .result-table td.highlight { color: var(--ink); font-weight: 500; }
 
   .project-footer { display: flex; gap: 0.75rem; flex-wrap: wrap; }
 
@@ -280,11 +250,11 @@
 <body>
 
 <nav>
-  <span class="nav-name">placeholderrrrr</span>
+  <span class="nav-name">placeholderrr</span>
   <div class="nav-links">
     <a href="#work">Work</a>
     <a href="#about">About</a>
-    <a href="https://github.com/neeharika-1999" target="_blank">GitHub</a>
+    <a href="https://github.com" target="_blank">GitHub</a>
   </div>
 </nav>
 
@@ -393,7 +363,7 @@
     </div>
   </section>
 
-  <!-- PROJECT 2: FEW-SHOT LEARNING (new) -->
+  <!-- PROJECT 2: FEW-SHOT LEARNING -->
   <section class="featured" id="few-shot">
     <div class="container">
       <p class="section-label">Project</p>
@@ -499,6 +469,104 @@
     </div>
   </section>
 
+  <!-- PROJECT 3: BIOBERT CLINICAL TEXT CLASSIFICATION (new) -->
+  <section class="featured" id="biobert">
+    <div class="container">
+      <p class="section-label">Project</p>
+
+      <div class="project-header reveal">
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">PyTorch</span>
+          <span class="tag">BioBERT</span>
+          <span class="tag">NLP</span>
+          <span class="tag">Transformers</span>
+        </div>
+        <h2 class="project-title">Clinical text classification with BioBERT</h2>
+        <p class="project-desc">Can a biomedical language model read clinical abstracts and correctly identify the disease category? Fine-tuned BioBERT on a dataset of 29,000+ medical abstracts across five conditions, exploring the interplay between synthetic data augmentation and transformer-based embeddings.</p>
+      </div>
+
+      <div class="metrics reveal">
+        <div class="metric"><div class="metric-val">29K+</div><div class="metric-lbl">medical abstracts</div></div>
+        <div class="metric"><div class="metric-val">5</div><div class="metric-lbl">disease categories</div></div>
+        <div class="metric"><div class="metric-val">55.3%</div><div class="metric-lbl">best model accuracy</div></div>
+        <div class="metric"><div class="metric-val">3</div><div class="metric-lbl">classifiers compared</div></div>
+      </div>
+
+      <div class="pipeline reveal">
+        <div class="pipe-step"><div class="pipe-box">medical abstracts</div><span class="pipe-arrow">→</span></div>
+        <div class="pipe-step"><div class="pipe-box">GPT augmentation</div><span class="pipe-arrow">→</span></div>
+        <div class="pipe-step"><div class="pipe-box">BioBERT tokenizer</div><span class="pipe-arrow">→</span></div>
+        <div class="pipe-step"><div class="pipe-box">[CLS] embeddings</div><span class="pipe-arrow">→</span></div>
+        <div class="pipe-step"><div class="pipe-box">LR / RF / SVM</div><span class="pipe-arrow">→</span></div>
+        <div class="pipe-step"><div class="pipe-box">5-class prediction</div></div>
+      </div>
+
+      <div class="finding reveal">
+        <p class="finding-label">Key finding</p>
+        <p>Fine-tuning BioBERT did not consistently improve downstream classifier performance — and in two of three cases, slightly <strong>reduced</strong> accuracy. The culprit: synthetic data generated via GPT lacked the nuance of real clinical notes, introducing label noise that diluted the embeddings. <strong>Random Forest was the only model to benefit</strong> from fine-tuning, gaining 13 points, suggesting ensemble methods are more resilient to noisy training signals.</p>
+      </div>
+
+      <div class="result-table-wrap reveal">
+        <p class="chart-title">Accuracy by model — fine-tuned vs. base BioBERT embeddings</p>
+        <table class="result-table">
+          <thead>
+            <tr>
+              <th>Model</th>
+              <th>Fine-tuned</th>
+              <th>Not fine-tuned</th>
+              <th>Change</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Logistic Regression</td>
+              <td>52.2%</td>
+              <td class="highlight">55.3%</td>
+              <td style="color: var(--ink3);">−3.1pp</td>
+            </tr>
+            <tr>
+              <td>Random Forest</td>
+              <td class="highlight">52.3%</td>
+              <td>39.0%</td>
+              <td style="color: var(--ink);">+13.3pp</td>
+            </tr>
+            <tr>
+              <td>Support Vector Machine</td>
+              <td>51.1%</td>
+              <td>54.7%</td>
+              <td style="color: var(--ink3);">−3.6pp</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="segments reveal">
+        <div class="segment-card">
+          <div class="seg-header">
+            <span class="seg-name">Data augmentation</span>
+            <span class="seg-count">+15K rows via GPT</span>
+          </div>
+          <p class="seg-body">Original dataset (14K records) was insufficient for robust training. GPT-generated synthetic abstracts using random insertion of medical terms — "treatment", "diagnosis", "therapy" — to expand to 29K records while preserving label distribution.</p>
+          <p class="seg-play"><span>Challenge →</span> synthetic notes lacked real-world nuance, introducing label noise</p>
+        </div>
+        <div class="segment-card">
+          <div class="seg-header">
+            <span class="seg-name">5 disease classes</span>
+            <span class="seg-count">multi-class</span>
+          </div>
+          <p class="seg-body">Neoplasms, digestive system diseases, nervous system diseases, cardiovascular diseases, and general pathological conditions — all classified from unstructured clinical text alone.</p>
+          <p class="seg-play"><span>Model →</span> BioBERT pre-trained on PubMed abstracts + PMC full-text</p>
+        </div>
+      </div>
+
+      <div class="project-footer reveal">
+        <a href="https://github.com/nv19999/BioBert-Classification-project" class="btn btn-primary" target="_blank">View on GitHub</a>
+        <a href="#" class="btn btn-ghost">Read report</a>
+      </div>
+    </div>
+  </section>
+
   <!-- MORE WORK (original, unchanged) -->
   <section class="other-projects" id="about">
     <div class="container">
@@ -528,7 +596,7 @@
 </main>
 
 <footer>
-  <span>placeholderrrrr — Marketing Analytics</span>
+  <span>placeholderrr — Marketing Analytics</span>
   <span>2025</span>
 </footer>
 
