@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Neeharika Vijayakumar — Portfolio</title>
+<title>placeholderrrrr — Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -32,7 +32,6 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  /* NAV */
   nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 100;
     background: var(--bg);
@@ -58,15 +57,10 @@
   }
   .nav-links a:hover { color: var(--ink); }
 
-  /* LAYOUT */
   main { padding-top: 56px; }
   .container { max-width: 900px; margin: 0 auto; padding: 0 2rem; }
 
-  /* HERO */
-  .hero {
-    padding: 7rem 0 5rem;
-    border-bottom: 1px solid var(--rule);
-  }
+  .hero { padding: 7rem 0 5rem; border-bottom: 1px solid var(--rule); }
   .hero-eyebrow {
     font-family: 'DM Mono', monospace;
     font-size: 0.72rem;
@@ -114,20 +108,11 @@
     transition: all 0.18s;
     cursor: pointer;
   }
-  .btn-primary {
-    background: var(--ink);
-    color: #fff;
-    border: 1px solid var(--ink);
-  }
+  .btn-primary { background: var(--ink); color: #fff; border: 1px solid var(--ink); }
   .btn-primary:hover { background: #333330; }
-  .btn-ghost {
-    background: transparent;
-    color: var(--ink);
-    border: 1px solid var(--rule);
-  }
+  .btn-ghost { background: transparent; color: var(--ink); border: 1px solid var(--rule); }
   .btn-ghost:hover { border-color: var(--ink2); }
 
-  /* FEATURED PROJECT */
   .featured { padding: 5rem 0; border-bottom: 1px solid var(--rule); }
   .section-label {
     font-family: 'DM Mono', monospace;
@@ -138,12 +123,7 @@
     margin-bottom: 3rem;
     display: flex; align-items: center; gap: 1rem;
   }
-  .section-label::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background: var(--rule);
-  }
+  .section-label::after { content: ''; flex: 1; height: 1px; background: var(--rule); }
 
   .project-header { margin-bottom: 2.5rem; }
   .project-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 1rem; }
@@ -164,14 +144,8 @@
     line-height: 1.2;
     margin-bottom: 0.75rem;
   }
-  .project-desc {
-    font-size: 0.95rem;
-    color: var(--ink2);
-    max-width: 560px;
-    line-height: 1.75;
-  }
+  .project-desc { font-size: 0.95rem; color: var(--ink2); max-width: 560px; line-height: 1.75; }
 
-  /* METRICS ROW */
   .metrics {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -182,281 +156,119 @@
     overflow: hidden;
     margin-bottom: 2.5rem;
   }
-  .metric {
-    background: var(--card-bg);
-    padding: 1.25rem 1rem;
-    text-align: center;
-  }
-  .metric-val {
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.8rem;
-    line-height: 1;
-    margin-bottom: 4px;
-  }
-  .metric-lbl {
-    font-size: 0.72rem;
-    color: var(--ink3);
-    font-family: 'DM Mono', monospace;
-    letter-spacing: 0.06em;
-  }
+  .metric { background: var(--card-bg); padding: 1.25rem 1rem; text-align: center; }
+  .metric-val { font-family: 'DM Serif Display', serif; font-size: 1.8rem; line-height: 1; margin-bottom: 4px; }
+  .metric-lbl { font-size: 0.72rem; color: var(--ink3); font-family: 'DM Mono', monospace; letter-spacing: 0.06em; }
 
-  /* PIPELINE */
   .pipeline {
-    display: flex;
-    align-items: center;
-    gap: 0;
-    margin-bottom: 2.5rem;
-    overflow-x: auto;
-    padding-bottom: 4px;
-  }
-  .pipe-step {
     display: flex; align-items: center; gap: 0;
-    flex-shrink: 0;
+    margin-bottom: 2.5rem; overflow-x: auto; padding-bottom: 4px;
   }
+  .pipe-step { display: flex; align-items: center; gap: 0; flex-shrink: 0; }
   .pipe-box {
-    background: var(--card-bg);
-    border: 1px solid var(--rule);
-    border-radius: 3px;
-    padding: 0.6rem 0.9rem;
-    font-size: 0.75rem;
-    font-family: 'DM Mono', monospace;
-    color: var(--ink2);
-    white-space: nowrap;
-    transition: all 0.18s;
+    background: var(--card-bg); border: 1px solid var(--rule); border-radius: 3px;
+    padding: 0.6rem 0.9rem; font-size: 0.75rem; font-family: 'DM Mono', monospace;
+    color: var(--ink2); white-space: nowrap; transition: all 0.18s;
   }
   .pipe-box:hover { border-color: var(--ink); color: var(--ink); }
-  .pipe-arrow {
-    color: var(--ink3);
-    font-size: 0.75rem;
-    padding: 0 6px;
-    flex-shrink: 0;
-  }
+  .pipe-arrow { color: var(--ink3); font-size: 0.75rem; padding: 0 6px; flex-shrink: 0; }
 
-  /* FINDING */
   .finding {
-    border-left: 2px solid var(--ink);
-    padding: 1.25rem 1.5rem;
-    background: var(--card-bg);
-    border-radius: 0 4px 4px 0;
-    margin-bottom: 2.5rem;
+    border-left: 2px solid var(--ink); padding: 1.25rem 1.5rem;
+    background: var(--card-bg); border-radius: 0 4px 4px 0; margin-bottom: 2.5rem;
   }
   .finding-label {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.65rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--ink3);
-    margin-bottom: 0.5rem;
+    font-family: 'DM Mono', monospace; font-size: 0.65rem;
+    letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink3); margin-bottom: 0.5rem;
   }
-  .finding p {
-    font-size: 0.92rem;
-    color: var(--ink);
-    line-height: 1.65;
-  }
+  .finding p { font-size: 0.92rem; color: var(--ink); line-height: 1.65; }
   .finding strong { font-weight: 500; }
 
-  /* MODEL CARDS */
-  .model-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
-    margin-bottom: 2.5rem;
+  .segments { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 2.5rem; }
+  .segment-card {
+    background: var(--card-bg); border: 1px solid var(--rule); border-radius: 4px;
+    padding: 1.25rem; transition: border-color 0.18s;
   }
+  .segment-card:hover { border-color: var(--ink2); }
+  .seg-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.75rem; }
+  .seg-name { font-family: 'DM Serif Display', serif; font-size: 1.05rem; font-weight: 400; }
+  .seg-count {
+    font-family: 'DM Mono', monospace; font-size: 0.68rem; color: var(--ink3);
+    background: var(--tag-bg); padding: 3px 8px; border-radius: 2px;
+  }
+  .seg-body { font-size: 0.83rem; color: var(--ink2); line-height: 1.65; margin-bottom: 1rem; }
+  .seg-play { font-size: 0.78rem; font-family: 'DM Mono', monospace; color: var(--ink3); border-top: 1px solid var(--rule); padding-top: 0.75rem; }
+  .seg-play span { color: var(--ink); }
+
+  .chart-section { margin-bottom: 2.5rem; }
+  .chart-title {
+    font-size: 0.78rem; font-family: 'DM Mono', monospace; color: var(--ink3);
+    letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 1rem;
+  }
+  .bar-row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+  .bar-label {
+    font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--ink2);
+    width: 150px; flex-shrink: 0; text-align: right;
+  }
+  .bar-track { flex: 1; height: 6px; background: var(--tag-bg); border-radius: 2px; overflow: hidden; }
+  .bar-fill { height: 100%; background: var(--ink); border-radius: 2px; width: 0; transition: width 1s cubic-bezier(0.4,0,0.2,1); }
+  .bar-fill.light { background: var(--ink3); }
+  .bar-group { flex: 1; display: flex; flex-direction: column; gap: 4px; }
+  .bar-group .bar-track { flex: unset; }
+  .bar-pct { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--ink3); width: 36px; flex-shrink: 0; }
+  .chart-legend { display: flex; gap: 1.5rem; margin-top: 0.75rem; padding-left: 160px; }
+  .legend-item { display: flex; align-items: center; gap: 6px; font-family: 'DM Mono', monospace; font-size: 0.65rem; color: var(--ink3); }
+  .legend-dot { width: 10px; height: 6px; border-radius: 1px; }
+
+  .model-cards { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; margin-bottom: 2.5rem; }
   .model-card {
-    background: var(--card-bg);
-    border: 1px solid var(--rule);
-    border-radius: 4px;
-    padding: 1.25rem;
-    transition: border-color 0.18s;
+    background: var(--card-bg); border: 1px solid var(--rule); border-radius: 4px;
+    padding: 1.25rem; transition: border-color 0.18s;
   }
   .model-card:hover { border-color: var(--ink2); }
   .model-card.best { border-color: var(--ink); }
-  .model-card-header {
-    display: flex; justify-content: space-between; align-items: flex-start;
-    margin-bottom: 0.75rem;
-  }
-  .model-name {
-    font-family: 'DM Serif Display', serif;
-    font-size: 1rem;
-    font-weight: 400;
-  }
-  .model-badge {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.62rem;
-    color: var(--ink3);
-    background: var(--tag-bg);
-    padding: 3px 8px;
-    border-radius: 2px;
-  }
-  .model-badge.top {
-    background: var(--ink);
-    color: #fff;
-  }
-  .model-acc {
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.5rem;
-    line-height: 1;
-    margin-bottom: 2px;
-  }
-  .model-acc-label {
-    font-size: 0.68rem;
-    font-family: 'DM Mono', monospace;
-    color: var(--ink3);
-    margin-bottom: 0.75rem;
-  }
-  .model-oneshot {
-    font-size: 0.78rem;
-    color: var(--ink2);
-    border-top: 1px solid var(--rule);
-    padding-top: 0.75rem;
-  }
-  .model-oneshot span {
-    font-family: 'DM Mono', monospace;
-    font-weight: 500;
-    color: var(--ink);
-  }
+  .model-card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.75rem; }
+  .model-name { font-family: 'DM Serif Display', serif; font-size: 1rem; font-weight: 400; }
+  .model-badge { font-family: 'DM Mono', monospace; font-size: 0.62rem; color: var(--ink3); background: var(--tag-bg); padding: 3px 8px; border-radius: 2px; }
+  .model-badge.top { background: var(--ink); color: #fff; }
+  .model-acc { font-family: 'DM Serif Display', serif; font-size: 1.5rem; line-height: 1; margin-bottom: 2px; }
+  .model-acc-label { font-size: 0.68rem; font-family: 'DM Mono', monospace; color: var(--ink3); margin-bottom: 0.75rem; }
+  .model-oneshot { font-size: 0.78rem; color: var(--ink2); border-top: 1px solid var(--rule); padding-top: 0.75rem; }
+  .model-oneshot span { font-family: 'DM Mono', monospace; font-weight: 500; color: var(--ink); }
 
-  /* BAR CHART */
-  .chart-section { margin-bottom: 2.5rem; }
-  .chart-title {
-    font-size: 0.78rem;
-    font-family: 'DM Mono', monospace;
-    color: var(--ink3);
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-  }
-  .bar-row {
-    display: flex; align-items: center; gap: 10px;
-    margin-bottom: 14px;
-  }
-  .bar-label {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.72rem;
-    color: var(--ink2);
-    width: 160px;
-    flex-shrink: 0;
-    text-align: right;
-  }
-  .bar-group {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-  }
-  .bar-track {
-    height: 6px;
-    background: var(--tag-bg);
-    border-radius: 2px;
-    overflow: hidden;
-  }
-  .bar-fill {
-    height: 100%;
-    background: var(--ink);
-    border-radius: 2px;
-    width: 0;
-    transition: width 1s cubic-bezier(0.4,0,0.2,1);
-  }
-  .bar-fill.light {
-    background: var(--ink3);
-  }
-  .bar-pct {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.72rem;
-    color: var(--ink3);
-    width: 36px;
-    flex-shrink: 0;
-  }
-  .chart-legend {
-    display: flex; gap: 1.5rem; margin-top: 0.75rem; padding-left: 170px;
-  }
-  .legend-item {
-    display: flex; align-items: center; gap: 6px;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.65rem;
-    color: var(--ink3);
-  }
-  .legend-dot {
-    width: 10px; height: 6px; border-radius: 1px;
-  }
+  .project-footer { display: flex; gap: 0.75rem; flex-wrap: wrap; }
 
-  .project-footer {
-    display: flex; gap: 0.75rem; flex-wrap: wrap;
-  }
-
-  /* OTHER PROJECTS */
   .other-projects { padding: 5rem 0; }
   .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1px;
-    background: var(--rule);
-    border: 1px solid var(--rule);
-    border-radius: 4px;
-    overflow: hidden;
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 1px; background: var(--rule); border: 1px solid var(--rule); border-radius: 4px; overflow: hidden;
   }
   .proj-card {
-    background: var(--card-bg);
-    padding: 1.5rem;
-    transition: background 0.18s;
-    cursor: pointer;
-    text-decoration: none;
-    display: block;
-    color: inherit;
+    background: var(--card-bg); padding: 1.5rem; transition: background 0.18s;
+    cursor: pointer; text-decoration: none; display: block; color: inherit;
   }
   .proj-card:hover { background: var(--tag-bg); }
-  .proj-card-tag {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.65rem;
-    color: var(--ink3);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin-bottom: 0.75rem;
-  }
-  .proj-card-title {
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.05rem;
-    font-weight: 400;
-    margin-bottom: 0.5rem;
-    line-height: 1.3;
-  }
-  .proj-card-desc {
-    font-size: 0.8rem;
-    color: var(--ink2);
-    line-height: 1.6;
-  }
-  .proj-card-arrow {
-    margin-top: 1rem;
-    font-size: 0.75rem;
-    color: var(--ink3);
-  }
+  .proj-card-tag { font-family: 'DM Mono', monospace; font-size: 0.65rem; color: var(--ink3); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.75rem; }
+  .proj-card-title { font-family: 'DM Serif Display', serif; font-size: 1.05rem; font-weight: 400; margin-bottom: 0.5rem; line-height: 1.3; }
+  .proj-card-desc { font-size: 0.8rem; color: var(--ink2); line-height: 1.6; }
+  .proj-card-arrow { margin-top: 1rem; font-size: 0.75rem; color: var(--ink3); }
 
-  /* FOOTER */
   footer {
-    border-top: 1px solid var(--rule);
-    padding: 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.75rem;
-    color: var(--ink3);
-    font-family: 'DM Mono', monospace;
+    border-top: 1px solid var(--rule); padding: 2rem;
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 0.75rem; color: var(--ink3); font-family: 'DM Mono', monospace;
   }
 
-  /* ANIMATIONS */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(12px); }
     to   { opacity: 1; transform: translateY(0); }
   }
-  .reveal {
-    opacity: 0;
-    transform: translateY(16px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-  }
+  .reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.6s ease, transform 0.6s ease; }
   .reveal.visible { opacity: 1; transform: translateY(0); }
 
   @media (max-width: 640px) {
     .metrics { grid-template-columns: repeat(2, 1fr); }
+    .segments { grid-template-columns: 1fr; }
     .model-cards { grid-template-columns: 1fr; }
     .projects-grid { grid-template-columns: 1fr; }
     .nav-links { display: none; }
@@ -468,7 +280,7 @@
 <body>
 
 <nav>
-  <span class="nav-name">Neeharika Vijayakumar</span>
+  <span class="nav-name">placeholderrrrr</span>
   <div class="nav-links">
     <a href="#work">Work</a>
     <a href="#about">About</a>
@@ -479,9 +291,9 @@
 <main>
   <section class="hero">
     <div class="container">
-      <p class="hero-eyebrow">Machine Learning & AI Research</p>
-      <h1>Teaching machines to learn from <em>almost nothing</em></h1>
-      <p class="hero-sub">I build and compare learning systems that generalise across tasks — meta-learning, few-shot classification, and beyond.</p>
+      <p class="hero-eyebrow">Marketing Data & Analytics</p>
+      <h1>Finding signal in<br><em>customer behaviour</em></h1>
+      <p class="hero-sub">I build models that turn raw transaction data into decisions — segmentation, prediction, attribution.</p>
       <div class="hero-links">
         <a href="#work" class="btn btn-primary">See projects</a>
         <a href="mailto:you@email.com" class="btn btn-ghost">Get in touch</a>
@@ -489,9 +301,102 @@
     </div>
   </section>
 
+  <!-- PROJECT 1: LOOKALIKE AUDIENCE BUILDER (original, unchanged) -->
   <section class="featured" id="work">
     <div class="container">
       <p class="section-label">Featured project</p>
+
+      <div class="project-header reveal">
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">scikit-learn</span>
+          <span class="tag">Random Forest</span>
+          <span class="tag">Customer Analytics</span>
+        </div>
+        <h2 class="project-title">Lookalike audience builder</h2>
+        <p class="project-desc">Given 500k+ retail transactions, which customers are most likely to become high-value — and what separates them? Built an end-to-end ML pipeline that labels, models, scores, and segments the full customer base.</p>
+      </div>
+
+      <div class="metrics reveal">
+        <div class="metric"><div class="metric-val">4,278</div><div class="metric-lbl">customers</div></div>
+        <div class="metric"><div class="metric-val">843</div><div class="metric-lbl">high-value labeled</div></div>
+        <div class="metric"><div class="metric-val">95%</div><div class="metric-lbl">model accuracy</div></div>
+        <div class="metric"><div class="metric-val">£2,086</div><div class="metric-lbl">spend threshold</div></div>
+      </div>
+
+      <div class="pipeline reveal">
+        <div class="pipe-step"><div class="pipe-box">raw transactions</div><span class="pipe-arrow">→</span></div>
+        <div class="pipe-step"><div class="pipe-box">feature engineering</div><span class="pipe-arrow">→</span></div>
+        <div class="pipe-step"><div class="pipe-box">auto-labeling</div><span class="pipe-arrow">→</span></div>
+        <div class="pipe-step"><div class="pipe-box">random forest</div><span class="pipe-arrow">→</span></div>
+        <div class="pipe-step"><div class="pipe-box">lookalike scores</div><span class="pipe-arrow">→</span></div>
+        <div class="pipe-step"><div class="pipe-box">segment output</div></div>
+      </div>
+
+      <div class="finding reveal">
+        <p class="finding-label">Key finding</p>
+        <p>The strongest predictor of high-value customers wasn't spend frequency or recency — it was <strong>raw item volume</strong>. Bulk buyers are the real growth lever. Recency and order frequency were secondary signals, meaning <strong>occasional large orders outperform frequent small ones</strong> in predicting lifetime value.</p>
+      </div>
+
+      <div class="chart-section reveal" id="chart-section-1">
+        <p class="chart-title">Feature importance</p>
+        <div class="bar-row">
+          <span class="bar-label">num_items</span>
+          <div class="bar-track"><div class="bar-fill" data-w="38"></div></div>
+          <span class="bar-pct">38%</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">avg_order_value</span>
+          <div class="bar-track"><div class="bar-fill" data-w="22"></div></div>
+          <span class="bar-pct">22%</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">num_orders</span>
+          <div class="bar-track"><div class="bar-fill" data-w="17"></div></div>
+          <span class="bar-pct">17%</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">purchase_frequency</span>
+          <div class="bar-track"><div class="bar-fill" data-w="13"></div></div>
+          <span class="bar-pct">13%</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">unique_products</span>
+          <div class="bar-track"><div class="bar-fill" data-w="10"></div></div>
+          <span class="bar-pct">10%</span>
+        </div>
+      </div>
+
+      <div class="segments reveal">
+        <div class="segment-card">
+          <div class="seg-header">
+            <span class="seg-name">Broad browsers</span>
+            <span class="seg-count">48 customers</span>
+          </div>
+          <p class="seg-body">High item volumes across 100–200 unique products. Frequent repeat buyers — likely resellers or small business owners buying across the catalogue.</p>
+          <p class="seg-play"><span>Play →</span> loyalty programs, volume incentives, catalogue highlights</p>
+        </div>
+        <div class="segment-card">
+          <div class="seg-header">
+            <span class="seg-name">Whale buyers</span>
+            <span class="seg-count">2 customers</span>
+          </div>
+          <p class="seg-body">Massive single orders (3,700–7,000 items) across only 2–3 product types. Wholesale or bulk commodity buyers with concentrated spend.</p>
+          <p class="seg-play"><span>Play →</span> personal outreach, volume discounts, account management</p>
+        </div>
+      </div>
+
+      <div class="project-footer reveal">
+        <a href="https://github.com" class="btn btn-primary" target="_blank">View on GitHub</a>
+        <a href="https://colab.research.google.com" class="btn btn-ghost" target="_blank">Run in Colab</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT 2: FEW-SHOT LEARNING (new) -->
+  <section class="featured" id="few-shot">
+    <div class="container">
+      <p class="section-label">Project</p>
 
       <div class="project-header reveal">
         <div class="project-tags">
@@ -505,22 +410,10 @@
       </div>
 
       <div class="metrics reveal">
-        <div class="metric">
-          <div class="metric-val">90.6%</div>
-          <div class="metric-lbl">best 5-shot accuracy</div>
-        </div>
-        <div class="metric">
-          <div class="metric-val">84.3%</div>
-          <div class="metric-lbl">best 1-shot accuracy</div>
-        </div>
-        <div class="metric">
-          <div class="metric-val">32,460</div>
-          <div class="metric-lbl">training images</div>
-        </div>
-        <div class="metric">
-          <div class="metric-val">3</div>
-          <div class="metric-lbl">algorithms compared</div>
-        </div>
+        <div class="metric"><div class="metric-val">90.6%</div><div class="metric-lbl">best 5-shot accuracy</div></div>
+        <div class="metric"><div class="metric-val">84.3%</div><div class="metric-lbl">best 1-shot accuracy</div></div>
+        <div class="metric"><div class="metric-val">32,460</div><div class="metric-lbl">training images</div></div>
+        <div class="metric"><div class="metric-val">3</div><div class="metric-lbl">algorithms compared</div></div>
       </div>
 
       <div class="pipeline reveal">
@@ -554,7 +447,7 @@
           </div>
           <div class="model-acc">83.8%</div>
           <div class="model-acc-label">5-way 5-shot</div>
-          <div class="model-oneshot">1-shot: <span>71.8%</span> — classifies by nearest mean embedding (prototype) per class</div>
+          <div class="model-oneshot">1-shot: <span>71.8%</span> — classifies by nearest mean embedding per class</div>
         </div>
         <div class="model-card">
           <div class="model-card-header">
@@ -567,11 +460,10 @@
         </div>
       </div>
 
-      <div class="chart-section reveal" id="chart-section">
+      <div class="chart-section reveal" id="chart-section-2">
         <p class="chart-title">5-way classification accuracy by model and shot count</p>
-
         <div class="bar-row">
-          <span class="bar-label">MAML</span>
+          <span class="bar-label" style="width:160px;">MAML</span>
           <div class="bar-group">
             <div class="bar-track"><div class="bar-fill" data-w="90.63"></div></div>
             <div class="bar-track"><div class="bar-fill light" data-w="84.3"></div></div>
@@ -579,7 +471,7 @@
           <span class="bar-pct">90.6%</span>
         </div>
         <div class="bar-row">
-          <span class="bar-label">Prototypical Nets</span>
+          <span class="bar-label" style="width:160px;">Prototypical Nets</span>
           <div class="bar-group">
             <div class="bar-track"><div class="bar-fill" data-w="83.81"></div></div>
             <div class="bar-track"><div class="bar-fill light" data-w="71.76"></div></div>
@@ -587,14 +479,13 @@
           <span class="bar-pct">83.8%</span>
         </div>
         <div class="bar-row">
-          <span class="bar-label">Matching Nets</span>
+          <span class="bar-label" style="width:160px;">Matching Nets</span>
           <div class="bar-group">
             <div class="bar-track"><div class="bar-fill" data-w="73.73"></div></div>
             <div class="bar-track"><div class="bar-fill light" data-w="61.27"></div></div>
           </div>
           <span class="bar-pct">73.7%</span>
         </div>
-
         <div class="chart-legend">
           <div class="legend-item"><div class="legend-dot" style="background: var(--ink);"></div>5-shot</div>
           <div class="legend-item"><div class="legend-dot" style="background: var(--ink3);"></div>1-shot</div>
@@ -608,27 +499,28 @@
     </div>
   </section>
 
+  <!-- MORE WORK (original, unchanged) -->
   <section class="other-projects" id="about">
     <div class="container">
       <p class="section-label">More work</p>
       <div class="projects-grid reveal">
         <a class="proj-card" href="#">
-          <p class="proj-card-tag">NLP</p>
-          <p class="proj-card-title">Coming soon</p>
-          <p class="proj-card-desc">Next project in progress.</p>
-          <p class="proj-card-arrow">Soon →</p>
+          <p class="proj-card-tag">Churn prediction</p>
+          <p class="proj-card-title">Customer churn early warning system</p>
+          <p class="proj-card-desc">Flags at-risk customers 30 days before they churn using behavioural signals. XGBoost + SHAP explanations.</p>
+          <p class="proj-card-arrow">Coming soon →</p>
         </a>
         <a class="proj-card" href="#">
-          <p class="proj-card-tag">Deep Learning</p>
-          <p class="proj-card-title">Coming soon</p>
-          <p class="proj-card-desc">Next project in progress.</p>
-          <p class="proj-card-arrow">Soon →</p>
+          <p class="proj-card-tag">Attribution</p>
+          <p class="proj-card-title">Multi-touch attribution model</p>
+          <p class="proj-card-desc">Shapley value attribution across paid, organic, and email channels. Replaces last-click with a fairer model.</p>
+          <p class="proj-card-arrow">Coming soon →</p>
         </a>
         <a class="proj-card" href="#">
-          <p class="proj-card-tag">Data Science</p>
-          <p class="proj-card-title">Coming soon</p>
-          <p class="proj-card-desc">Next project in progress.</p>
-          <p class="proj-card-arrow">Soon →</p>
+          <p class="proj-card-tag">Marketing mix</p>
+          <p class="proj-card-title">MMM spend optimiser</p>
+          <p class="proj-card-desc">Bayesian marketing mix model that quantifies ROI per channel and outputs an optimal budget allocation.</p>
+          <p class="proj-card-arrow">Coming soon →</p>
         </a>
       </div>
     </div>
@@ -636,7 +528,7 @@
 </main>
 
 <footer>
-  <span>Neeharika Vijayakumar — ML Research</span>
+  <span>placeholderrrrr — Marketing Analytics</span>
   <span>2025</span>
 </footer>
 
@@ -651,18 +543,19 @@
   }, { threshold: 0.1 });
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-  const barObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.querySelectorAll('.bar-fill').forEach(bar => {
-          bar.style.width = bar.dataset.w + '%';
-        });
-        barObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.3 });
-  const cs = document.getElementById('chart-section');
-  if (cs) barObserver.observe(cs);
+  ['chart-section-1', 'chart-section-2'].forEach(id => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.querySelectorAll('.bar-fill').forEach(bar => {
+            bar.style.width = bar.dataset.w + '%';
+          });
+        }
+      });
+    }, { threshold: 0.3 }).observe(el);
+  });
 </script>
 </body>
 </html>
